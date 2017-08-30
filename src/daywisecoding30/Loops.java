@@ -1,5 +1,8 @@
+<<<<<<< HEAD
 package daywisecoding30;
 
+=======
+>>>>>>> kkkHR/master
 import java.util.*;
 public class Loops {
 
