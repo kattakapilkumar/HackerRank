@@ -1,3 +1,5 @@
+
+package daywisecoding30;
 import java.util.*;
 public class Loops {
 
