@@ -1,0 +1,4 @@
+##
+
+one of the while loop condition to check the palindrome
+
