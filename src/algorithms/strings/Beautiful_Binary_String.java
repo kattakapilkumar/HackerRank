@@ -8,6 +8,7 @@ public class Beautiful_Binary_String
 	{
 		Scanner kapil=new Scanner(System.in);		
 		int count=0;
+		String s=kapil.next();
 		/*int n=kapil.nextInt();
         //***************
 		//String s=new String();
@@ -32,8 +33,15 @@ public class Beautiful_Binary_String
 		}
 			
 				*/
+		//*************************
+		System.out.println((s.length() - s.replaceAll("010", "").length())/3);
 		
-		int n=kapil.nextInt();
+		
+		//*************************
+		
+		
+		
+		/*int n=kapil.nextInt();
 		String s=kapil.next();
 		for(int i=0;i<=n-3;)
 		{
@@ -49,7 +57,7 @@ public class Beautiful_Binary_String
 			}
 			
 		}
-          System.out.println(count);
+          System.out.println(count);*/
 	}
 
 }
