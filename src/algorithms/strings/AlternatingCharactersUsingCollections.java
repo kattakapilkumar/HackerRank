@@ -25,9 +25,7 @@ public class AlternatingCharactersUsingCollections {
 				}
 				
 			}
-			System.out.println(count);
-			
-			
+			System.out.println(count);						
 		}
 		
 	}
