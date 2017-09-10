@@ -1,8 +1,5 @@
-<<<<<<< HEAD
-package daywisecoding30;
 
-=======
->>>>>>> kkkHR/master
+package daywisecoding30;
 import java.util.*;
 public class Loops {
 
