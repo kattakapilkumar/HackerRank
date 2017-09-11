@@ -13,7 +13,7 @@ public class Anagrams2
 		// TODO Auto-generated method stub
 		Scanner k=new Scanner(System.in);				
 		int n=k.nextInt();
-		//k.nextLine();
+		k.nextLine();
 		//k.NextLine();	
 		boolean katta=false;
 		for(int i=0;i<n;i++)

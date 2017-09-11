@@ -2,3 +2,15 @@
 
 
 do the anagram progame using list or ArrayList
+
+
+#using HASHSET  first store in HASHSET
+
+
+And Then next  
+
+use retainAll then find the size of that and then do minus with actuall sizes
+
+
+########################
+if length is  2 like "ab"  observe this case
