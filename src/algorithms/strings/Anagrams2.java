@@ -35,6 +35,10 @@ public class Anagrams2 {
 					System.out.println("they are palindromes");
 					System.out.println(0);
 				}
+				else
+				{
+					
+				}
 				count =0;
 				//System.out.println("the lengths are same");
 				int sublen = len/2;

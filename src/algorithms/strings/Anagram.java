@@ -12,9 +12,17 @@ public class Anagram
 	{
 		// TODO Auto-generated method stub
 		Scanner k=new Scanner(System.in);		
+	    int n=k.nextInt();
+		
 		String s=k.nextLine();
 		boolean katta=false;
 		int slen=s.length();
+	
+		for(int i=0;i<n;i++)
+		{
+			
+		}
+		
 		
 		String str1=s.substring(0,slen/2);
 		String str2=s.substring(slen/2+1,slen);
@@ -39,26 +47,33 @@ public class Anagram
 			System.out.println(-1);
 		}
 		
-		katta=checkanagram(s);
-		
-		if(katta)
-		{
-			System.out.println("there are anagrams");
-			System.out.println(0);
-		}
 		else
 		{
-			System.out.println("there are not anagrams");
-			Iterator itr = cs.iterator();
-			Iterator itr2 = cs2.iterator();
-			
-			int diff = cs.size() - cs2.size();
-			
-			if(diff < 0)
+			int diff=0;
+			katta=checkanagram(s);
+			if(katta)
 			{
-				diff=diff* (-1);
+				System.out.println("there are anagrams");
+				System.out.println(0);
+				
 			}
-			System.out.println(diff);
+			else
+			{
+				System.out.println("there are not anagrams");
+				Iterator itr = cs.iterator();
+				Iterator itr2 = cs2.iterator();
+				
+				 diff = cs.size() - cs2.size();
+				
+				if(diff < 0)
+				{
+					diff=diff* (-1);
+				}
+				System.out.println(diff);
+			}
+			
+			
+			
 		}
 		
 		
@@ -100,6 +115,7 @@ public class Anagram
 	    {
 	    	if(ncs.containsAll(ncs2))
 			{
+	    		System.out.println("*******   both contains same elements ******");
 				return true;
 			}
 	    }
