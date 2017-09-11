@@ -1,0 +1,4 @@
+##
+
+
+do the anagram progame using list or ArrayList
