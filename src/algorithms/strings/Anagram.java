@@ -13,64 +13,69 @@ public class Anagram
 		// TODO Auto-generated method stub
 		Scanner k=new Scanner(System.in);		
 	    int n=k.nextInt();
-		
-		String s=k.nextLine();
-		boolean katta=false;
-		int slen=s.length();
-	
-		for(int i=0;i<n;i++)
+		k.nextLine();
+	    
+	    for(int i=0;i<n;i++)
 		{
 			
-		}
+	    	String s=k.next();
+			boolean katta=false;
+			int slen=s.length();
 		
-		
-		String str1=s.substring(0,slen/2);
-		String str2=s.substring(slen/2+1,slen);
-		
-		Set cs=new HashSet();
-		Set cs2=new HashSet();
-		
-		for(char c1:str1.toCharArray())
-		{
-			cs.add(c1);
-		}
-		for(char c2:str2.toCharArray())
-		{
-			cs2.add(c2);
-		}	
-		
-		int count=0;
-		
-		if(slen %2 == 1)
-		{
 			
-			System.out.println(-1);
-		}
-		
-		else
-		{
-			int diff=0;
-			katta=checkanagram(s);
-			if(katta)
+			
+			
+			String str1=s.substring(0,slen/2);
+			String str2=s.substring(slen/2,slen);
+			
+			Set cs=new HashSet();
+			Set cs2=new HashSet();
+			
+			for(char c1:str1.toCharArray())
 			{
-				System.out.println("there are anagrams");
-				System.out.println(0);
-				
+				cs.add(c1);
 			}
+			for(char c2:str2.toCharArray())
+			{
+				cs2.add(c2);
+			}	
+			
+			int count=0;
+			
+			if(slen %2 == 1)
+			{
+				
+				System.out.println(-1);
+			}
+			
 			else
 			{
-				System.out.println("there are not anagrams");
-				Iterator itr = cs.iterator();
-				Iterator itr2 = cs2.iterator();
-				
-				 diff = cs.size() - cs2.size();
-				
-				if(diff < 0)
+				int diff=0;
+				katta=checkanagram(s);
+				if(katta)
 				{
-					diff=diff* (-1);
+					System.out.println("there are anagrams");
+					System.out.println(0);
+					
 				}
-				System.out.println(diff);
-			}
+				else
+				{
+					System.out.println("there are not anagrams");
+					Iterator itr = cs.iterator();
+					Iterator itr2 = cs2.iterator();
+					
+					 diff = cs.size() - cs2.size();
+					
+					if(diff < 0)
+					{
+						diff=diff* (-1);
+					}
+					System.out.println(diff);
+				}
+				
+		}
+	    
+		
 			
 			
 			
@@ -113,9 +118,10 @@ public class Anagram
 	    }
 	    if(ncs.size()==ncs2.size())
 	    {
+	    	
 	    	if(ncs.containsAll(ncs2))
 			{
-	    		System.out.println("*******   both contains same elements ******");
+	    		System.out.println("*******   both contains same number of elements ******");
 				return true;
 			}
 	    }

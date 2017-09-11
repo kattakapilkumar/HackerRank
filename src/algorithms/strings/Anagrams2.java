@@ -5,20 +5,21 @@ import java.util.Iterator;
 import java.util.Scanner;
 import java.util.Set;
 
-public class Anagrams2 {
+public class Anagrams2 
+{
 
 	public static void main(String[] args) 
 	{
 		// TODO Auto-generated method stub
 		Scanner k=new Scanner(System.in);				
 		int n=k.nextInt();
-		k.nextLine();
-		//k.hasNextLine();	
+		//k.nextLine();
+		//k.NextLine();	
 		boolean katta=false;
 		for(int i=0;i<n;i++)
 		{
 			int count =0;
-			String s=k.next();
+			String s=k.nextLine();
 			System.out.println("the "+i+"   th string is   "+s);
 
 			int len=s.length();
@@ -59,11 +60,7 @@ public class Anagrams2 {
 				{  
 					System.out.println("strings are anagrams");					
 					System.out.println(0);
-				}
-				
-				
-				
-				
+				}															
 				//************************
 				while(x != sublen)
 				{
