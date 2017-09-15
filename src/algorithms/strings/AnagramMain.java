@@ -17,12 +17,27 @@ public class AnagramMain {
             String s1 = str.substring(0,len/2);
             String s2 = str.substring(len/2,len);
             char[] s1Chars = s1.toCharArray();
-            for (char c : s1Chars){
+            for (char c : s1Chars)
+            {
                 int index = s2.indexOf(c);
-                if (index == -1){
+                if (index == -1)
+                {
                     count++;
-                } else {
+                } 
+                else 
+                {
+                	//System.out.println("******");
+                	System.out.println("here the index value is  "+index);
+                	//System.out.println("******");
                     s2 = s2.substring(0,index)+s2.substring(index+1);
+                    //String s3=s2.substring(index+1);
+                  //  System.out.println("###########");
+                  //  System.out.println(s2.substring(0,index));
+                  //  System.out.println("+++++++++++");
+                   // System.out.println(s3);
+                  //  System.out.println("==========");
+                   System.out.println("here the string is "+s2);
+                  //  System.out.println("###########");
                 }
             }
             System.out.println(count);
