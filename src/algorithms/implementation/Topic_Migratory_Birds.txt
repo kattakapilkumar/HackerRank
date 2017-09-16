@@ -1,0 +1,6 @@
+1)##   take an empty array
+
+
+the empty array always contains the    0  values
+
+0 's  we can increment  that
