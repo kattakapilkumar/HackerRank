@@ -1,0 +1,12 @@
+1)###   never be careless about 
+
+	If - Else statements
+
+
+see  first  two  submissions
+
+
+
+Brie wants to turn a minimum number of pages to get to page number  from either page number  or page number . The number of pages she must turn from page number  is always , but there is a twist when she's turning backward from page number :
+If  is odd, then she turns  pages.
+If  is even, then she turns  pages.
