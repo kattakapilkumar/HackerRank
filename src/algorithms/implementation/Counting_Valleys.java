@@ -15,7 +15,7 @@ public class Counting_Valleys {
 		
 		int count =0;
 		int valleycount =0;
-		int temp =0;
+		//int temp =0;
 		boolean belowsea = false;
 		//ArrayList al = new ArrayList();
 		for(int i=0;i<ch.length;i++)
