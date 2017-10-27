@@ -16,9 +16,11 @@ public class Two_Strings {
 		int achievedcount =0;
 		char ch2[]=new char[str2.length()];
 		ch2 = str2.toCharArray();
-		for(int i=0;i<str1.length();i++)
+		int strlen1=str1.length();
+		int strlen2=str2.length();
+		for(int i=0;i<strlen1;i++)
 		{
-			for(int j=0;j<str2.length();j++)
+			for(int j=0;j<strlen2;j++) // m is strting 2 length   
 			{
 				if(str1.charAt(i)==ch2[j])
 				{
@@ -34,6 +36,15 @@ public class Two_Strings {
 			System.out.println(kapil1);
 		}*/
 		System.out.println(achievedcount);
+		if(givencount == achievedcount )
+		{
+			System.out.println("YES");
+		}
+		else
+		{
+			System.out.println("NO");
+		}
 	}
+	
 
 }
