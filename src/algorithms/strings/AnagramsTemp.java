@@ -153,15 +153,13 @@ public class AnagramsTemp
 	    	System.out.println(itr4.next());
 	    }*/
 	    if(ncs.size()==ncs2.size())
-	    {
-	    	
+	    {	    	
 	    	if(ncs.containsAll(ncs2))
 			{
 	    		//System.out.println("*******   both contains same number of elements ******");
 				return true;
 			}
-	    }
-		
+	    }		
 		return false;
 	}
 
