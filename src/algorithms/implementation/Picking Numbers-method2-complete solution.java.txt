@@ -1,0 +1,55 @@
+import java.io.*;
+import java.util.*;
+import java.text.*;
+import java.math.*;
+import java.util.regex.*;
+public class Solution 
+{   static int pickingNumbers(int[] a) 
+    {
+        //Tip ::: 1)find the maximium number and the dont count the occurences after that count in the 100 number array.
+        int alen=a.length;
+        int[] hunarray=new int[100];    // take 100 instead of 10.
+        int position=0;
+        int maxcount=0;
+        int count=0;
+        for(int i=0;i<alen;i++)
+        {
+           position=a[i];
+           //System.out.println(position);
+           //if(hunarray[position]=0)
+           //{
+                //System.out.println(hunarray[position]);
+                hunarray[position]=hunarray[position]+1; 
+                //System.out.println(hunarray[position]);
+           //}                           
+            //printing the integers array
+            //for(int s=0;s<10;s++)
+            //{
+              //  System.out.println(hunarray[s]);
+          //}
+        }    
+        for(int y=0;y<99;y++)
+        {
+            count = 0;
+            count = hunarray[y]+hunarray[y+1];
+            if(maxcount < count)
+            {
+                maxcount = count;
+            }
+        }
+        return maxcount;
+    }    
+    public static void main(String[] args) 
+    {
+        Scanner in=new Scanner(System.in);
+        int n=in.nextInt();
+        int[] a=new int[n];
+        for(int a_i=0;a_i<n;a_i++)
+        {
+            a[a_i]=in.nextInt();
+        }
+        int result=pickingNumbers(a);
+        System.out.println(result);
+        in.close();
+    }
+}
